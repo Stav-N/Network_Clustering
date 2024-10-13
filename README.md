@@ -27,8 +27,7 @@ The clustering algorithm is influenced by a scale factor that controls the tight
 2. Preprocessing:
 
     A precomputed distance matrix is used to capture the dissimilarities between connections.
-    This distance matrix takes into account not just the numeric differences between IP addresses and ports, but also the network types (small, big, public) of the source and destination involved in each connection.
-    The matrix represents these dissimilarities in a way that penalizes connections that cross different network types (e.g., small to big, public to private), while connections within the same network type (e.g., small-to-small) have smaller distances.
+    This distance matrix takes into account not just the numeric differences between IP addresses and ports, but also the protocols and the network types (small, big, public) of the source and destination involved in each connection.
 
 
 3. Clustering:
